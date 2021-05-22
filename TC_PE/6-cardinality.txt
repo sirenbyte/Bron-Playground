@@ -1,0 +1,23 @@
+--1
+SELECT COUNT(*) 
+FROM sport,playground
+WHERE s.sportId=p.sportId AND sportName='Futboll';
+--2
+SELECT COUNT(*) 
+FROM playground JOIN sport ON s.sportId=p.sportId Where sportName='Futboll';
+SELECT COUNT(*) 
+FROM sport JOIN playground ON s.sportId=p.sportId Where sportName='Futboll';
+SELECT COUNT(*) 
+FROM sport JOIN playground ON s.sportId=p.sportId Where sportName='Futboll';
+--3
+|T1` = 55|
+|T2` = 55|
+|T3` = 55|
+--4
+(55*55)/(55)=55
+(55*55)/(55)=55
+(55*55)/(55)=55
+--5
+0.000002456840005454 seconds
+0.000002456840005454 seconds
+0.000002456840005454 seconds

@@ -1,0 +1,26 @@
+--1
+SELECT COUNT(*) 
+FROM comments,playground ,users
+WHERE c.userId=p.userId AND c.playgroundId=p.playgroundId;
+--2
+SELECT COUNT(*) 
+FROM playground JOIN (comments JOIN users ON c.userId=p.userId)
+WHERE c.playgroundId=p.playgroundId;
+SELECT COUNT(*) 
+FROM users JOIN (playground join comments ON c.playgroundId=p.playgroundId) 
+WHERE c.userId=p.userId;
+SELECT COUNT(*) 
+FROM users JOIN (comments join playground ON c.playgroundId=p.playgroundId) 
+WHERE c.userId=p.userId;
+--3
+|T1` = 100+50=150|
+|T2` = 50+150=200|
+|T3` = 50+150=200|
+--4
+(150*200*200)/(150*200)=200
+(200*150*200/(200*200)=150
+(200*200*150)/(200*150)=200
+--5
+0.000988202728245483 seconds
+0.004017229080200146 seconds
+0.004017229080200146 seconds

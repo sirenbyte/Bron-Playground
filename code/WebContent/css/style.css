@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+main {
+	margin-top:70px;
+  height: calc(100% - 100px);
+  display: flex;
+}
+
+.sidebar {
+  flex: 2;
+  background-color: #245e5c;
+  /* overflow-y: scroll; */
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: block;
+  border-bottom: 1px solid #327a78;
+}
+
+.sidebar ul li a {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+  background-color: #419492;
+}
+
+.admin-content {
+  flex: 8;
+  padding: 20px 50px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.admin-content table {
+  text-transform: uppercase;
+  margin-top: 30px;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.admin-content table th {
+  padding: 5px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}
+
+.admin-content table th + th {
+  border-left: 1px solid white;
+}
+
+.admin-content table td {
+  padding: 5px 0;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+}
+
+.admin-content table td + td {
+  border-left: 1px solid black;
+}
+
+.admin-content table td a {
+  text-decoration: none;
+}
+
+.admin-content table td a.delete {
+  color: red;
+}
+
+.admin-content table td a.update {
+  color: orange;
+}
+
+.inner-content label {
+  font-size: 15px;
+}
+
+.admin-content input,
+.admin-content select {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.admin-content button {
+  padding: 5px;
+  background-color: #327a78;
+  color: white;
+  font-size: 18px;
+}
+
+.admin-content button.delete{
+	background-color: red;
+	color: white;
+}
+
+footer {
+  height: 50px;
+  background-color: #f85c78;
+}

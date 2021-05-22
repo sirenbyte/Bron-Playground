@@ -1,0 +1,23 @@
+--1
+SELECT COUNT(*) 
+FROM playground
+WHERE description IS NOT NULL;
+--2
+SELECT COUNT(*) 
+FROM playground WHERE description IS NOT NULL;
+SELECT COUNT(*) 
+FROM playground WHERE description IS NOT NULL;
+SELECT COUNT(*) 
+FROM playground WHERE description IS NOT NULL;
+--3
+|T1` = 145|
+|T2` = 145|
+|T3` = 145|
+--4
+(145*145)/(145)=145
+(145*145)/(145)=145
+(145*145)/(145)=145
+--5
+0.000001735456854300 seconds
+0.000001735456854300 seconds
+0.000001735456854300 seconds

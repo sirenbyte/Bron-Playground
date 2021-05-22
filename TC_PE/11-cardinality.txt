@@ -1,0 +1,24 @@
+--1
+SELECT COUNT(*) 
+FROM playground
+WHERE description IS NOT NULL;
+--2
+SELECT COUNT(*) 
+FROM playground price<=1000 and price>=2500;
+SELECT COUNT(*) 
+FROM playground price<=1000 and price>=2500;
+SELECT COUNT(*) 
+FROM playground WHERE price<=1000 and price>=2500;
+--3
+|T1` = 98|
+|T2` = 98|
+|T3` = 98|
+--4
+(98*98)/(98)=98
+(98*98)/(98)=98
+(98*98)/(98)=98
+--5
+0.000000085456854150 seconds
+0.000000085456854150 seconds
+0.000000085456854150 seconds
+
